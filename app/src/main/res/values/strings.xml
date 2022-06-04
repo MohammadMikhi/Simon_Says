@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Simon Says</string>
+    <string name="logo">Simon\nSays</string>
+    <string name="score">Score:</string>
+    <string name="high_score">High Score:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

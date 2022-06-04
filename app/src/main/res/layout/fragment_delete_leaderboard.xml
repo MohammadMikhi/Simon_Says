@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOverFragment">
+
+    <TextView
+        android:id="@+id/textViewWarning"
+        android:layout_width="241dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/anton"
+        android:text="WARNING!"
+        android:textAlignment="center"
+        android:textColor="#B10909"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#B10909"
+        android:text="Confirm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWarning" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#135316"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/buttonConfirm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWarning" />
+
+    <TextView
+        android:id="@+id/textViewText"
+        android:layout_width="391dp"
+        android:layout_height="58dp"
+        android:text="This will delete all leaderboard entries"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#B10909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWarning"
+        app:layout_constraintVertical_bias="0.255" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

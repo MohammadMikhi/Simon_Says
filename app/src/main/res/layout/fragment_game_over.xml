@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOverFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="241dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/anton"
+        android:text="Game Over!"
+        android:textAlignment="center"
+        android:textColor="#B10909"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="#303F9F"
+        android:text="Play Again"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonLeader"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonLeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="#303F9F"
+        android:text="LeaderBoard"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPlayAgain"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewScoreFragment"
+        android:layout_width="251dp"
+        android:layout_height="44dp"
+        android:text="Score: "
+        android:textAlignment="center"
+        android:textColor="#1976D2"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlayAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.41" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
